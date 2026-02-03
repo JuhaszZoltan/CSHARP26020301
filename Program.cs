@@ -4,8 +4,7 @@ List<Fordulo> totoFordulok = [];
 
 using StreamReader sr = new(SrcPath);
 _ = sr.ReadLine();
-while (!sr.EndOfStream)
-    totoFordulok.Add(new(sr.ReadLine().Split(';')));
+while (!sr.EndOfStream) totoFordulok.Add(new(sr.ReadLine().Split(';')));
 
 Console.WriteLine($"fordulok szama: {totoFordulok.Count}");
 
